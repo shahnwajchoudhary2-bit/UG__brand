@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UG brand</title>
+</head>
+<body>
+ <A1>Danish </A1>
+ <p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HACKER DARK CYBER 7.0</title>
+
+<style>
+*{box-sizing:border-box}
+:root{
+ --green:#00ff78;--cyan:#00eaff;
+ --red:#ff3c59;--panel:#07150d;
+}
+body{
+ margin:0;background:#020805;color:var(--green);
+ font-family:Consolas,monospace;
+}
+#matrix{
+ position:fixed;inset:0;width:100%;height:100%;
+ pointer-events:none;z-index:0;opacity:.16;
+}
+.page{position:relative;z-index:1}
+header{
+ text-align:center;padding:25px 12px;
+ background:#04150ded;border-bottom:1px solid var(--green);
+ box-shadow:0 0 25px #00ff7833;
+}
+.logo{
+ font-size:clamp(25px,5vw,44px);
+ letter-spacing:4px;text-shadow:0 0 18px var(--green);
+ animation:glitch 3s infinite;
+}
+@keyframes glitch{
+ 0%,90%,100%{transform:translateX(0)}
+ 92%{transform:translateX(3px)}
+ 94%{transform:translateX(-3px)}
+}
+.subtitle{color:#8affb8;letter-spacing:3px;font-size:12px}
+.container{max-width:1250px;margin:auto;padding:18px}
+.topbar{
+ display:flex;flex-wrap:wrap;justify-content:space-between;
+ gap:12px;align-items:center;padding:13px;
+ background:#07150e;border:1px solid #205a35;border-radius:8px;
+}
+.online{color:var(--green)}
+.dot{
+ display:inline-block;width:8px;height:8px;
+ background:var(--green);border-radius:50%;
+ box-shadow:0 0 12px var(--green);margin-right:6px;
+}
+.section{
+ border-left:3px solid var(--green);
+ padding-left:12px;margin:25px 0 15px;font-size:19px;
+}
+.cards{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+ gap:13px;
+}
+.card{
+ background:#07150ff2;border:1px solid #205a35;
+ padding:17px;border-radius:10px;transition:.2s;
+ box-shadow:0 0 15px #00ff7510;
+}
+.card:hover{box-shadow:0 0 20px #00ff7533}
+.card h3{font-size:13px;color:#9bd8b2;margin-top:0}
+.value{font-size:25px;font-weight:bold;color:var(--green)}
+.muted{font-size:11px;color:#769984}
+.grid{
+ display:grid;grid-template-columns:1.7fr 1fr;gap:15px;
+}
+.terminal{
+ background:#010805;border:1px solid var(--green);
+ border-radius:9px;overflow:hidden;
+ box-shadow:0 0 25px #00ff7822;
+}
+.term-head{
+ background:#07301b;padding:13px;color:white;
+ display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;
+}
+.term-body{
+ height:270px;overflow:auto;padding:16px;
+ font-size:13px;line-height:1.8;overflow-wrap:anywhere;
+}
+.green{color:var(--green)}
+.cyan{color:var(--cyan)}
+.red{color:var(--red)}
+.yellow{color:#ffdd65}
+.command{display:flex;gap:8px;padding:12px;border-top:1px solid #205a35}
+.command input{
+ flex:1;min-width:0;background:transparent;border:0;outline:0;
+ color:var(--green);font:14px Consolas,monospace;
+}
+button{
+ padding:11px 15px;margin:3px;background:#062111;
+ color:var(--green);border:1px solid var(--green);
+ border-radius:5px;cursor:pointer;font-family:inherit;
+}
+button:hover{background:var(--green);color:black;box-shadow:0 0 15px var(--green)}
+.radar-wrap{display:grid;place-items:center}
+#radar{width:100%;max-width:290px;aspect-ratio:1}
+.progress{height:9px;background:#183324;overflow:hidden;border-radius:20px;margin:10px 0 18px}
+.bar{height:100%;width:40%;background:var(--green);box-shadow:0 0 10px var(--green);transition:.4s}
+.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:7px}
+.alert{
+ display:none;padding:13px;background:#630d1c;color:white;
+ border:1px solid var(--red);text-align:center;
+ animation:blink 1s infinite;margin:15px 0;border-radius:7px;
+}
+@keyframes blink{50%{opacity:.5}}
+.search{
+ width:100%;max-width:520px;padding:13px;
+ background:#06160d;border:1px solid var(--green);
+ border-radius:7px;color:white;font-family:inherit;outline:none;
+}
+.search::placeholder{color:#82a891}
+.platforms{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:15px;
+}
+.platform-card{
+ background:#07150ff5;border:1px solid #205a35;
+ border-radius:10px;padding:17px;
+ transition:.2s;
+}
+.platform-card:hover{transform:translateY(-3px);box-shadow:0 0 18px #00ff7533}
+.platform-name{font-size:19px;color:white;font-weight:bold}
+.platform-icon{font-size:25px;margin-right:8px}
+.demo{font-size:10px;color:#ffdd65}
+.profile-id{color:var(--cyan);font-size:12px;overflow-wrap:anywhere}
+.profile-status{font-size:12px;color:var(--green)}
+.activity{max-height:190px;overflow:auto;font-size:12px;line-height:1.9}
+footer{
+ text-align:center;padding:25px;
+ border-top:1px solid #205a35;margin-top:30px;color:#70967e;
+}
+.small{font-size:10px;color:#668271}
+@media(max-width:750px){
+ .grid{grid-template-columns:1fr}
+ .container{padding:10px}
+ .term-body{height:250px}
+}
+</style>
+</head>
+
+<body>
+<canvas id="matrix"></canvas>
+
+<div class="page">
+<header>
+ <div class="logo">☠ HACKER DARK CYBER ☠</div>
+ <p class="subtitle">ULTIMATE CYBER CONTROL ROOM</p>
+ <div class="small">VERSION 7.0 • ALL IN ONE EDITION</div>
+</header>
+
+<div class="container">
+
+<div class="topbar">
+ <div><span class="dot"></span><span class="online">SYSTEM ONLINE</span></div>
+ <div>🔐 SECURITY: ACTIVE</div>
+ <div id="clock">00:00:00</div>
+ <div id="date"></div>
+ <button onclick="fullScreen()">⛶ FULLSCREEN</button>
+</div>
+
+<div class="alert" id="alert">
+🚨 FICTIONAL DEMO ALERT 🚨
+</div>
+
+<h2 class="section">◈ MAIN CONTROL DASHBOARD</h2>
+
+<div class="cards">
+ <div class="card">
+  <h3>⚡ SYSTEM STATUS</h3>
+  <div class="value">ACTIVE</div>
+  <div class="muted">Visual system operational</div>
+ </div>
+ <div class="card">
+  <h3>🔐 SECURITY LEVEL</h3>
+  <div class="value">MAXIMUM</div>
+  <div class="muted">Demo protection display</div>
+ </div>
+ <div class="card">
+  <h3>🌐 NETWORK MODE</h3>
+  <div class="value">DEMO</div>
+  <div class="muted">Local simulation only</div>
+ </div>
+ <div class="card">
+  <h3>💎 CYBER POINTS</h3>
+  <div class="value" id="score">0000</div>
+  <div class="muted">Visual activity points</div>
+ </div>
+</div>
+
+<h2 class="section">◈ TERMINAL & RADAR</h2>
+
+<div class="grid">
+ <div class="terminal">
+  <div class="term-head">
+   <span>● HACKER ROOT TERMINAL</span>
+   <span class="online">● LIVE</span>
+  </div>
+
+  <div class="term-body" id="terminal">
+   <div class="cyan">HACKER DARK CYBER v7.0</div>
+   <div class="green">Initializing virtual environment...</div>
+   <div class="green">Loading Matrix interface...</div>
+   <div class="green">Preparing cyber dashboard...</div>
+   <div class="cyan">SYSTEM READY.</div>
+   <div class="yellow">TYPE HELP FOR COMMANDS.</div>
+  </div>
+
+  <form class="command" id="commandForm">
+   <span>root@hacker:~$</span>
+   <input id="commandInput" placeholder="Enter command..." autocomplete="off">
+   <button type="submit">RUN</button>
+  </form>
+ </div>
+
+ <div class="card">
+  <h3>📡 DIGITAL RADAR</h3>
+  <div class="radar-wrap">
+   <canvas id="radar" width="300" height="300"></canvas>
+  </div>
+  <p class="muted" style="text-align:center">FICTIONAL RADAR ANIMATION</p>
+ </div>
+</div>
+
+<h2 class="section">◈ PERFORMANCE MONITOR</h2>
+
+<div class="cards">
+ <div class="card">
+  <h3>CPU VISUAL USAGE</h3>
+  <div class="value" id="cpuText">45%</div>
+  <div class="progress"><div class="bar" id="cpu"></div></div>
+ </div>
+ <div class="card">
+  <h3>RAM VISUAL USAGE</h3>
+  <div class="value" id="ramText">62%</div>
+  <div class="progress"><div class="bar" id="ram"></div></div>
+ </div>
+ <div class="card">
+  <h3>DATA ACTIVITY</h3>
+  <div class="value" id="dataText">28%</div>
+  <div class="progress"><div class="bar" id="data"></div></div>
+ </div>
+ <div class="card">
+  <h3>SECURITY STATUS</h3>
+  <div class="value">PROTECTED</div>
+  <div class="muted">Demo indicator</div>
+ </div>
+</div>
+
+<h2 class="section">◈ COMMAND CENTER</h2>
+
+<div class="card">
+ <div class="actions">
+  <button onclick="startSimulation()">▶ START SIMULATION</button>
+  <button onclick="fakeScan()">🔍 FAKE SCAN</button>
+  <button onclick="showAlert()">🚨 RED ALERT</button>
+  <button onclick="stopAlert()">✓ CLEAR ALERT</button>
+  <button onclick="clearTerminal()">✖ CLEAR TERMINAL</button>
+  <button onclick="toggleMatrix()" id="matrixBtn">🌧 MATRIX ON/OFF</button>
+  <button onclick="resetDashboard()">↻ RESET</button>
+ </div>
+</div>
+
+<h2 class="section">◈ SOCIAL MEDIA CONTROL CENTER</h2>
+
+<div class="card" style="margin-bottom:15px;text-align:center">
+ <input class="search" id="search"
+ placeholder="🔍 Search Instagram, Facebook, Google..."
+ oninput="filterPlatforms()">
+ <p class="muted">Search and view fictional sample profiles.</p>
+</div>
+
+<div class="platforms" id="platforms">
+
+<div class="platform-card" data-search="instagram">
+ <div class="platform-name">📸 INSTAGRAM</div>
+ <p class="demo">SAMPLE ACCOUNT • DEMO ONLY</p>
+ <p>Username: <span class="cyan">@hacker.demo</span></p>
+ <p class="profile-id">Demo ID: IG-DEMO-001</p>
+ <p>Sample Followers: 12,500</p>
+ <p class="profile-status">● SIMULATED</p>
+ <button onclick="inspect('Instagram','@hacker.demo','IG-DEMO-001')">VIEW DEMO</button>
+</div>
+
+<div class="platform-card" data-search="facebook">
+ <div class="platform-name">🔵 FACEBOOK</div>
+ <p class="demo">SAMPLE ACCOUNT • DEMO ONLY</p>
+ <p>Name: <span class="cyan">Cyber Hacker</span></p>
+ <p class="profile-id">Demo ID: FB-DEMO-002</p>
+ <p>Sample Friends: 4,200</p>
+ <p class="profile-status">● SIMULATED</p>
+ <button onclick="inspect('Facebook','Cyber Hacker','FB-DEMO-002')">VIEW DEMO</button>
+</div>
+
+<div class="platform-card" data-search="google gmail">
+ <div class="platform-name">🌐 GOOGLE / GMAIL</div>
+ <p class="demo">SAMPLE ACCOUNT • DEMO ONLY</p>
+ <p>Account: <span class="cyan">hacker.demo@example.invalid</span></p>
+ <p class="profile-id">Demo ID: GG-DEMO-003</p>
+ <p>Services: Gmail, Drive</p>
+ <p class="profile-status">● SIMULATED</p>
+ <button onclick="inspect('Google / Gmail','hacker.demo@example.invalid','GG-DEMO-003')">VIEW DEMO</button>
+</div>
+
+<div class="platform-card" data-search="youtube">
+ <div class="platform-name">▶️ YOUTUBE</div>
+ <p class="demo">SAMPLE CHANNEL</p>
+ <p>Channel: <span class="cyan">Hacker World</span></p>
+ <p class="profile-id">Demo ID: YT-DEMO-004</p>
+ <p>Sample Subscribers: 85,000</p>
+ <p class="profile-status">● SIMULATED</p>
+ <button onclick="inspect('YouTube','Hacker World','YT-DEMO-004')">VIEW DEMO</button>
+</div>
+
+<div class="platform-card" data-search="whatsapp">
+ <div class="platform-name">🟢 WHATSAPP</div>
+ <p class="demo">SAMPLE ACCOUNT</p>
+ <p>Profile: <span class="cyan">Demo User</span></p>
+ <p class="profile-id">Demo ID: WA-DEMO-005</p>
+ <p>Account Type: Personal</p>
+ <p class="profile-status">● SIMULATED</p>
+ <button onclick="inspect('WhatsApp','Demo User','WA-DEMO-005')">VIEW DEMO</button>
+</div>
+
+<div class="platform-card" data-search="telegram">
+ <div class="platform-name">✈️ TELEGRAM</div>
+ <p class="demo">SAMPLE ACCOUNT</p>
+ <p>Username: <span class="cyan">@cyber_demo</span></p>
+ <p class="profile-id">Demo ID: TG-DEMO-006</p>
+ <p>Sample Groups: 12</p>
+ <p class="profile-status">● SIMULATED</p>
+ <button onclick="inspect('Telegram','@cyber_demo','TG-DEMO-006')">VIEW DEMO</button>
+</div>
+
+<div class="platform-card" data-search="snapchat">
+ <div class="platform-name">👻 SNAPCHAT</div>
+ <p class="demo">SAMPLE ACCOUNT</p>
+ <p>Username: <span class="cyan">snap.demo</span></p>
+ <p class="profile-id">Demo ID: SC-DEMO-007</p>
+ <p>Profile: Public Demo</p>
+ <p class="profile-status">● SIMULATED</p>
+ <button onclick="inspect('Snapchat','snap.demo','SC-DEMO-007')">VIEW DEMO</button>
+</div>
+
+<div class="platform-card" data-search="twitter x">
+ <div class="platform-name">𝕏 X / TWITTER</div>
+ <p class="demo">SAMPLE ACCOUNT</p>
+ <p>Username: <span class="cyan">@x_demo</span></p>
+ <p class="profile-id">Demo ID: X-DEMO-008</p>
+ <p>Sample Posts: 1,250</p>
+ <p class="profile-status">● SIMULATED</p>
+ <button onclick="inspect('X / Twitter','@x_demo','X-DEMO-008')">VIEW DEMO</button>
+</div>
+
+<div class="platform-card" data-search="discord">
+ <div class="platform-name">🎮 DISCORD</div>
+ <p class="demo">SAMPLE ACCOUNT</p>
+ <p>Username: <span class="cyan">hacker_demo</span></p>
+ <p class="profile-id">Demo ID: DC-DEMO-009</p>
+ <p>Sample Servers: 8</p>
+ <p class="profile-status">● SIMULATED</p>
+ <button onclick="inspect('Discord','hacker_demo','DC-DEMO-009')">VIEW DEMO</button>
+</div>
+
+<div class="platform-card" data-search="linkedin">
+ <div class="platform-name">💼 LINKEDIN</div>
+ <p class="demo">SAMPLE ACCOUNT</p>
+ <p>Username: <span class="cyan">Cyber Demo</span></p>
+ <p class="profile-id">Demo ID: LI-DEMO-010</p>
+ <p>Connections: 950</p>
+ <p class="profile-status">● SIMULATED</p>
+ <button onclick="inspect('LinkedIn','Cyber Demo','LI-DEMO-010')">VIEW DEMO</button>
+</div>
+
+</div>
+
+<h2 class="section">◈ ACCOUNT DETAILS</h2>
+
+<div class="card" id="details">
+ <p class="cyan">SELECT VIEW DEMO ON ANY PLATFORM</p>
+ <p>Sample profile information will appear here.</p>
+</div>
+
+<h2 class="section">◈ LIVE SYSTEM ACTIVITY</h2>
+
+<div class="card activity" id="activity">
+ <div class="green">[SYSTEM] Interface initialized.</div>
+ <div class="cyan">[SECURITY] Demo mode active.</div>
+ <div class="green">[SOCIAL] Ten sample platforms loaded.</div>
+ <div class="green">[CONTROL] Waiting for command.</div>
+</div>
+
+<div class="card" style="margin-top:18px">
+ <h3>🔒 PRIVACY NOTICE</h3>
+ <p class="muted">
+ All account names, IDs, followers and profile details are invented demo data.
+ This website does not connect to Instagram, Facebook, Google or other services.
+ It cannot access real accounts, private information or passwords.
+ </p>
+</div>
+
+<footer>
+ <h2>☠ HACKER DARK CYBER ☠</h2>
+ <p>THINK • CREATE • INNOVATE</p>
+ <p class="small">© 2026 HACKER CYBER LAB • VERSION 7.0</p>
+</footer>
+
+</div>
+
+<script>
+// MATRIX BACKGROUND
+const matrixCanvas=document.getElementById("matrix");
+const mx=matrixCanvas.getContext("2d");
+let drops=[],columns=0,matrixOn=true;
+const fontSize=15;
+
+function resizeMatrix(){
+ const dpr=Math.min(devicePixelRatio||1,2);
+ matrixCanvas.width=innerWidth*dpr;
+ matrixCanvas.height=innerHeight*dpr;
+ mx.setTransform(dpr,0,0,dpr,0,0);
+ columns=Math.ceil(innerWidth/fontSize);
+ drops=Array(columns).fill(1);
+}
+resizeMatrix();
+addEventListener("resize",resizeMatrix);
+
+function drawMatrix(){
+ if(!matrixOn)return;
+ mx.fillStyle="rgba(0,0,0,.09)";
+ mx.fillRect(0,0,innerWidth,innerHeight);
+ mx.fillStyle="#00ff78";
+ mx.font=fontSize+"px monospace";
+
+ drops.forEach((y,i)=>{
+  const char=String.fromCharCode(Math.random()*90+33);
+  mx.fillText(char,i*fontSize,y*fontSize);
+  if(y*fontSize>innerHeight&&Math.random()>.975)drops[i]=0;
+  drops[i]++;
+ });
+}
+setInterval(drawMatrix,45);
+
+function toggleMatrix(){
+ matrixOn=!matrixOn;
+ document.getElementById("matrixBtn").innerText=
+ matrixOn?"🌧 MATRIX ON/OFF":"🌧 MATRIX PAUSED";
+}
+
+// CLOCK
+function updateClock(){
+ const now=new Date();
+ document.getElementById("clock").innerText=now.toLocaleTimeString();
+ document.getElementById("date").innerText=now.toLocaleDateString();
+}
+setInterval(updateClock,1000);
+updateClock();
+
+// TERMINAL
+const terminal=document.getElementById("terminal");
+const activity=document.getElementById("activity");
+
+function addLine(text,color="green"){
+ const d=document.createElement("div");
+ d.className=color;
+ d.textContent="> "+text;
+ terminal.appendChild(d);
+ terminal.scrollTop=terminal.scrollHeight;
+ while(terminal.children.length>60)terminal.removeChild(terminal.firstChild);
+}
+
+function log(text){
+ const d=document.createElement("div");
+ d.className="green";
+ d.textContent="["+new Date().toLocaleTimeString()+"] "+text;
+ activity.prepend(d);
+ while(activity.children.length>25)activity.removeChild(activity.lastChild);
+}
+
+// PERFORMANCE
+function performanceUpdate(){
+ const cpu=Math.floor(15+Math.random()*80);
+ const ram=Math.floor(20+Math.random()*75);
+ const data=Math.floor(10+Math.random()*90);
+ document.getElementById("cpu").style.width=cpu+"%";
+ document.getElementById("ram").style.width=ram+"%";
+ document.getElementById("data").style.width=data+"%";
+ document.getElementById("cpuText").innerText=cpu+"%";
+ document.getElementById("ramText").innerText=ram+"%";
+ document.getElementById("dataText").innerText=data+"%";
+}
+setInterval(performanceUpdate,1300);
+
+// SCORE AND SIMULATION
+let score=0,running=false,simulationTimer=null;
+
+function updateScore(){
+ document.getElementById("score").innerText=String(score).padStart(4,"0");
+}
+
+const messages=[
+ "Visual environment running...",
+ "Sample interface module loaded.",
+ "Dashboard checked successfully.",
+ "Demo security status: PROTECTED.",
+ "Fictional network display refreshed.",
+ "Cyber interface operational.",
+ "No external devices accessed."
+];
+
+function startSimulation(){
+ if(running){addLine("Simulation already running.","yellow");return;}
+ running=true;
+ let count=0;
+ addLine("Starting visual simulation...","cyan");
+ log("Visual simulation started.");
+
+ simulationTimer=setInterval(()=>{
+  const message=messages[Math.floor(Math.random()*messages.length)];
+  addLine(message);
+  log(message);
+  score+=10;
+  updateScore();
+  count++;
+  if(count>=15){
+   clearInterval(simulationTimer);
+   running=false;
+   addLine("SIMULATION COMPLETED.","cyan");
+   log("Simulation completed.");
+  }
+ },650);
+}
+
+// FAKE SCAN
+function fakeScan(){
+ addLine("Starting fictional demo scan...","yellow");
+ addLine("Sample module A: SAFE");
+ addLine("Sample module B: SAFE");
+ addLine("Sample module C: SAFE");
+ addLine("No real accounts or networks scanned.","cyan");
+ addLine("DEMO SCAN COMPLETE.");
+ log("Fictional scan completed.");
+ score+=50;
+ updateScore();
+}
+
+// ALERT
+function showAlert(){
+ document.getElementById("alert").style.display="block";
+ addLine("DEMO ALERT ACTIVATED.","red");
+ log("Visual alert activated.");
+}
+function stopAlert(){
+ document.getElementById("alert").style.display="none";
+ addLine("Alert dismissed.","cyan");
+ log("Visual alert dismissed.");
+}
+
+// TERMINAL CLEAR AND RESET
+function clearTerminal(){
+ terminal.innerHTML="";
+ addLine("Terminal cleared. Ready.","cyan");
+ log("Terminal cleared.");
+}
+
+function resetDashboard(){
+ clearInterval(simulationTimer);
+ running=false;
+ score=0;
+ updateScore();
+ stopAlert();
+ clearTerminal();
+ document.getElementById("search").value="";
+ filterPlatforms();
+ log("Dashboard reset.");
+}
+
+// SOCIAL SEARCH
+function filterPlatforms(){
+ const q=document.getElementById("search").value.toLowerCase();
+ document.querySelectorAll(".platform-card").forEach(card=>{
+  card.style.display=card.dataset.search.includes(q)?"block":"none";
+ });
+}
+
+// SAFE DEMO PROFILE
+function inspect(platform,username,id){
+ const box=document.getElementById("details");
+ box.innerHTML="";
+ const heading=document.createElement("h3");
+ heading.className="cyan";
+ heading.textContent=platform+" — DEMO PROFILE";
+ const name=document.createElement("p");
+ name.textContent="Sample Username: "+username;
+ const profileId=document.createElement("p");
+ profileId.textContent="Sample ID: "+id;
+ const status=document.createElement("p");
+ status.className="yellow";
+ status.textContent="Status: FICTIONAL SAMPLE — NOT A REAL ACCOUNT";
+ box.append(heading,name,profileId,status);
+ addLine("Demo profile displayed: "+platform,"cyan");
+ log("Sample profile opened: "+platform);
+}
+
+// COMMAND INPUT
+document.getElementById("commandForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ const input=document.getElementById("commandInput");
+ const cmd=input.value.trim().toLowerCase();
+ if(!cmd)return;
+
+ addLine("root@hacker:~$ "+cmd,"cyan");
+
+ switch(cmd){
+  case "help":
+   addLine("HELP STATUS SCAN CLEAR WHOAMI TIME ABOUT MATRIX RADAR ALERT POINTS PLATFORMS","yellow");
+   break;
+  case "status":
+   addLine("SYSTEM: ACTIVE");
+   addLine("SECURITY: PROTECTED");
+   addLine("MODE: LOCAL DEMO SIMULATION","cyan");
+   break;
+  case "scan":
+   fakeScan();
+   break;
+  case "clear":
+   clearTerminal();
+   break;
+  case "whoami":
+   addLine("USER: HACKER");
+   addLine("ROLE: CYBER LAB OPERATOR");
+   break;
+  case "time":
+   addLine(new Date().toLocaleString(),"cyan");
+   break;
+  case "about":
+   addLine("HACKER DARK CYBER VERSION 7.0");
+   addLine("ALL-IN-ONE FICTIONAL INTERFACE");
+   break;
+  case "matrix":
+   toggleMatrix();
+   addLine("Matrix effect toggled.");
+   break;
+  case "radar":
+   addLine("Fictional radar animation is active.","cyan");
+   break;
+  case "alert":
+   showAlert();
+   break;
+  case "points":
+   addLine("YOUR CYBER SCORE: "+score);
+   break;
+  case "platforms":
+   addLine("10 SAMPLE SOCIAL PLATFORMS DISPLAYED.");
+   break;
+  default:
+   addLine("UNKNOWN COMMAND. TYPE HELP.","red");
+ }
+ input.value="";
+});
+
+// RADAR
+const radar=document.getElementById("radar");
+const rc=radar.getContext("2d");
+let sweep=0;
+const radarDots=Array.from({length:10},()=>({
+ x:Math.random()*260+20,y:Math.random()*260+20
+}));
+
+function drawRadar(){
+ rc.clearRect(0,0,300,300);
+ rc.strokeStyle="#00ff7855";
+
+ for(let r=45;r<=130;r+=42){
+  rc.beginPath();
+  rc.arc(150,150,r,0,Math.PI*2);
+  rc.stroke();
+ }
+ rc.beginPath();
+ rc.moveTo(20,150);rc.lineTo(280,150);
+ rc.moveTo(150,20);rc.lineTo(150,280);
+ rc.stroke();
+
+ rc.save();
+ rc.translate(150,150);
+ rc.rotate(sweep);
+ rc.fillStyle="#00ff7835";
+ rc.beginPath();
+ rc.moveTo(0,0);
+ rc.arc(0,0,130,-.25,.25);
+ rc.closePath();
+ rc.fill();
+ rc.restore();
+
+ radarDots.forEach((d,i)=>{
+  rc.fillStyle=i%2?"#00eaff":"#00ff78";
+  rc.shadowBlur=10;
+  rc.shadowColor=rc.fillStyle;
+  rc.beginPath();
+  rc.arc(d.x,d.y,3,0,Math.PI*2);
+  rc.fill();
+ });
+ rc.shadowBlur=0;
+ rc.fillStyle="white";
+ rc.beginPath();
+ rc.arc(150,150,4,0,Math.PI*2);
+ rc.fill();
+
+ sweep+=.025;
+ requestAnimationFrame(drawRadar);
+}
+drawRadar();
+
+// FULL SCREEN
+function fullScreen(){
+ if(!document.fullscreenElement){
+  document.documentElement.requestFullscreen?.();
+ }else{
+  document.exitFullscreen?.();
+ }
+}
+
+log("Hacker Dark Cyber 7.0 initialized.");
+log("All previous tools and social demo cards loaded.");
+</script>
+
+</body>
+</html>
+<p>
+</body>
+</html>
